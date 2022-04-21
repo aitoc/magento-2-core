@@ -265,7 +265,6 @@ class Feed extends \Magento\AdminNotification\Model\Feed
             ) {
                 return $this->extensionHelper->isModuleEnabled($extension);
             }
-
         }
 
         return false;

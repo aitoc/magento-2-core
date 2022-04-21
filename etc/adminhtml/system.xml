@@ -40,17 +40,6 @@
                     <frontend_model>Aitoc\Core\Block\System\Config\Form\Field\Notification</frontend_model>
                 </field>
             </group>
-            <group id="extensions" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
-            <label>Installed Extensions</label>
-                <frontend_model>Aitoc\Core\Block\InstalledExtensions</frontend_model>
-            </group>
-            <group id="store" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
-                <label>Aitoc Marketplace</label>
-                <frontend_model>Aitoc\Core\Block\Shopfeed</frontend_model>
-                <comment><![CDATA[
-                <iframe id="aitoc-shopfeed" src="https://www.aitoc.com/shopfeed/index/m2index" frameborder="0" scrolling="yes" width="100%" height="100%" style="min-height: 900px;"></iframe>
-                ]]></comment>
-            </group>
         </section>
     </system>
 </config>
