@@ -77,3 +77,4 @@
 ￼- [Shipping Table Rates & Methods](https://www.aitoc.com/magento-2-shipping-table-rates.html) 
 ￼
 ￼See more [**Magento 2 extensions**](https://www.aitoc.com/magento-2-extensions.html).
+
