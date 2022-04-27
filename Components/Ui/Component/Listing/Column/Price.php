@@ -2,11 +2,11 @@
 
 namespace Aitoc\Core\Components\Ui\Component\Listing\Column;
 
+use Magento\Framework\Pricing\PriceCurrencyInterface;
 use Magento\Framework\View\Element\UiComponent\ContextInterface;
 use Magento\Framework\View\Element\UiComponentFactory;
-use Magento\Ui\Component\Listing\Columns\Column;
-use Magento\Framework\Pricing\PriceCurrencyInterface;
 use Magento\Store\Model\StoreManagerInterface;
+use Magento\Ui\Component\Listing\Columns\Column;
 
 class Price extends Column
 {
@@ -37,7 +37,9 @@ class Price extends Column
      * Prepare Data Source
      *
      * @param array $dataSource
+     *
      * @return array
+     * @throws \Magento\Framework\Exception\NoSuchEntityException
      */
     public function prepareDataSource(array $dataSource)
     {
@@ -48,7 +50,7 @@ class Price extends Column
                     $item[$this->getData('name')] = $this->priceFormatter->format(
                         $item[$this->getData('name')],
                         false,
-                        null,
+                        \Magento\Framework\Pricing\PriceCurrencyInterface::DEFAULT_PRECISION,
                         null,
                         $currencyCode
                     );
