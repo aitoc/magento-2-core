@@ -26,7 +26,7 @@ class AitocNotificationLogoAddInToolbar
     {
         return $subject->getLatestUnreadNotifications()
             ->clear()
-            ->addFieldToFilter(\Aitoc\Core\Setup\UpgradeSchema::AITOC_NOTIFICATION_FIELD, 1);
+            ->addFieldToFilter(\Aitoc\Core\Api\ColumnInterface::AITOC_NOTIFICATION_FIELD, 1);
     }
 
     /**

@@ -33,7 +33,7 @@ class GridActions
         \Magento\Framework\DataObject $row
     ) {
         $result = $proceed($row);
-        if ($row->getData(\Aitoc\Core\Setup\UpgradeSchema::AITOC_NOTIFICATION_FIELD)) {
+        if ($row->getData(\Aitoc\Core\Api\ColumnInterface::AITOC_NOTIFICATION_FIELD)) {
             $result .= sprintf(
                 '<a class="action" href="%s" title="%s">%s</a>',
                 $this->getDisableUrl(),

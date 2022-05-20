@@ -22,7 +22,7 @@ class AitocNotificationLogoAdd
     ) {
         $result = $proceed($row);
 
-        if ($row->getData(\Aitoc\Core\Setup\UpgradeSchema::AITOC_NOTIFICATION_FIELD)) {
+        if ($row->getData(\Aitoc\Core\Api\ColumnInterface::AITOC_NOTIFICATION_FIELD)) {
             return '<div class="aitoc-grid-message"><div class="aitoc-notif-logo"></div>' . $result . '</div>';
         } else {
             return $result;
