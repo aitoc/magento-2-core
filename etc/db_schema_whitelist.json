@@ -1,0 +1,7 @@
+{
+    "adminnotification_inbox": {
+        "column": {
+            "aitoc_notification": true
+        }
+    }
+}
