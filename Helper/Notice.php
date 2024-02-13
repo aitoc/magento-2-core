@@ -3,10 +3,7 @@
 namespace Aitoc\Core\Helper;
 
 use Magento\Framework\App\Helper\AbstractHelper;
-use SimpleXMLElement;
-use Zend\Http\Client\Adapter\Curl as CurlClient;
-use Zend\Http\Response as HttpResponse;
-use Zend\Uri\Http as HttpUri;
+use Laminas\Http\Client\Adapter\Curl as CurlClient;
 use Magento\Framework\Json\DecoderInterface;
 
 class Notice extends AbstractHelper
