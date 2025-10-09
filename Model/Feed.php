@@ -112,8 +112,8 @@ class Feed extends \Magento\AdminNotification\Model\Feed
         \Magento\Backend\App\ConfigInterface $config,
         \Magento\Framework\App\Config\ReinitableConfigInterface $reinitableConfig,
         \Magento\Framework\App\Config\Storage\WriterInterface $configWriter,
-        \Magento\Framework\Model\ResourceModel\AbstractResource $resource = null,
-        \Magento\Framework\Data\Collection\AbstractDb $resourceCollection = null,
+        ?\Magento\Framework\Model\ResourceModel\AbstractResource $resource = null,
+        ?\Magento\Framework\Data\Collection\AbstractDb $resourceCollection = null,
         array $data = []
     ) {
         parent::__construct(
